@@ -1,0 +1,6 @@
+framework module Pods_VanfiiderUITests {
+  umbrella header "Pods-VanfiiderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F9DEAE3B1D918BF8E8B3E5E /* Pods_VanfiiderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F53F0F36D964C2F032465BD /* Pods_VanfiiderUITests.framework */; };
+		C234FAF13B14FD99981F1958 /* Pods_VanfiiderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED0DB490C6632177397691C /* Pods_VanfiiderTests.framework */; };
+		C8804F8801C005ED6E8530BD /* Pods_Vanfiider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E542A3EF46A12E35732C57 /* Pods_Vanfiider.framework */; };
+		DD1E3E901C71CA56008F4794 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1E3E8F1C71CA56008F4794 /* Instagram.swift */; };
+		DD1E3E921C71CA96008F4794 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1E3E911C71CA96008F4794 /* PhotoInfo.swift */; };
+		DD1E3E941C71CABF008F4794 /* FastImageCacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1E3E931C71CABF008F4794 /* FastImageCacheHelper.swift */; };
+		DD1E3E981C71CAF7008F4794 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1E3E971C71CAF7008F4794 /* CoreDataStack.swift */; };
+		DD1E3E9C1C71CC78008F4794 /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1E3E9B1C71CC78008F4794 /* InstagramLoginViewController.swift */; };
+		DD1E3E9E1C71CFF1008F4794 /* NewFiidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1E3E9D1C71CFF1008F4794 /* NewFiidsViewController.swift */; };
+		DD5F2F311C746F4F006F673D /* Zag Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD5F2F301C746E5D006F673D /* Zag Regular.otf */; };
+		DD5F2F321C746F53006F673D /* Zag Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD5F2F2F1C746E56006F673D /* Zag Bold.otf */; };
 		DD6DD0C41C71B9A500455B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DD0C31C71B9A500455B9A /* AppDelegate.swift */; };
 		DD6DD0C61C71B9A500455B9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DD0C51C71B9A500455B9A /* ViewController.swift */; };
 		DD6DD0C91C71B9A500455B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6DD0C71C71B9A500455B9A /* Main.storyboard */; };
@@ -15,6 +26,11 @@
 		DD6DD0D11C71B9A500455B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6DD0CF1C71B9A500455B9A /* LaunchScreen.storyboard */; };
 		DD6DD0DC1C71B9A500455B9A /* VanfiiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DD0DB1C71B9A500455B9A /* VanfiiderTests.swift */; };
 		DD6DD0E71C71B9A500455B9A /* VanfiiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DD0E61C71B9A500455B9A /* VanfiiderUITests.swift */; };
+		DD7BB7461C72C575000C61C8 /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB7451C72C575000C61C8 /* Facebook.swift */; };
+		DD7BB7491C72C66E000C61C8 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB7481C72C66E000C61C8 /* FacebookLoginViewController.swift */; };
+		DD7BB74E1C73E57C000C61C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB74D1C73E57C000C61C8 /* User.swift */; };
+		DD94C4001C73FC23005D4AB9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94C3FF1C73FC23005D4AB9 /* TabBarViewController.swift */; };
+		DD94C4021C73FDA9005D4AB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94C4011C73FDA9005D4AB9 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F53F0F36D964C2F032465BD /* Pods_VanfiiderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VanfiiderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		229EF4FA62F2B443FED6B2AB /* Pods-Vanfiider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanfiider.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vanfiider/Pods-Vanfiider.release.xcconfig"; sourceTree = "<group>"; };
+		23DB87D868EDB2C1699036CF /* Pods-VanfiiderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VanfiiderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VanfiiderTests/Pods-VanfiiderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0B74C4A4C58A79137CD08F /* Pods-VanfiiderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VanfiiderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VanfiiderTests/Pods-VanfiiderTests.release.xcconfig"; sourceTree = "<group>"; };
+		50E542A3EF46A12E35732C57 /* Pods_Vanfiider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vanfiider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E320866ADB77F9510CC405 /* Pods-Vanfiider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanfiider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vanfiider/Pods-Vanfiider.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB9F265EED1573A796DE068 /* Pods-VanfiiderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VanfiiderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VanfiiderUITests/Pods-VanfiiderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9ED0DB490C6632177397691C /* Pods_VanfiiderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VanfiiderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1E3E8F1C71CA56008F4794 /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
+		DD1E3E911C71CA96008F4794 /* PhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		DD1E3E931C71CABF008F4794 /* FastImageCacheHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastImageCacheHelper.swift; sourceTree = "<group>"; };
+		DD1E3E971C71CAF7008F4794 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DD1E3E9B1C71CC78008F4794 /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
+		DD1E3E9D1C71CFF1008F4794 /* NewFiidsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFiidsViewController.swift; sourceTree = "<group>"; };
+		DD5F2F2F1C746E56006F673D /* Zag Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Zag Bold.otf"; sourceTree = "<group>"; };
+		DD5F2F301C746E5D006F673D /* Zag Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Zag Regular.otf"; sourceTree = "<group>"; };
 		DD6DD0C01C71B9A500455B9A /* Vanfiider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vanfiider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6DD0C31C71B9A500455B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD6DD0C51C71B9A500455B9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +81,12 @@
 		DD6DD0E21C71B9A500455B9A /* VanfiiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VanfiiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6DD0E61C71B9A500455B9A /* VanfiiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanfiiderUITests.swift; sourceTree = "<group>"; };
 		DD6DD0E81C71B9A500455B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7BB7451C72C575000C61C8 /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
+		DD7BB7481C72C66E000C61C8 /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
+		DD7BB74D1C73E57C000C61C8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DD94C3FF1C73FC23005D4AB9 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DD94C4011C73FDA9005D4AB9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EF33ABE4B5784547D9678A16 /* Pods-VanfiiderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VanfiiderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VanfiiderUITests/Pods-VanfiiderUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8804F8801C005ED6E8530BD /* Pods_Vanfiider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C234FAF13B14FD99981F1958 /* Pods_VanfiiderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +110,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F9DEAE3B1D918BF8E8B3E5E /* Pods_VanfiiderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C28023B244E084AD18EEB459 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50E542A3EF46A12E35732C57 /* Pods_Vanfiider.framework */,
+				9ED0DB490C6632177397691C /* Pods_VanfiiderTests.framework */,
+				1F53F0F36D964C2F032465BD /* Pods_VanfiiderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF6FCBAEDB2C7BF39FF19DC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83E320866ADB77F9510CC405 /* Pods-Vanfiider.debug.xcconfig */,
+				229EF4FA62F2B443FED6B2AB /* Pods-Vanfiider.release.xcconfig */,
+				23DB87D868EDB2C1699036CF /* Pods-VanfiiderTests.debug.xcconfig */,
+				2F0B74C4A4C58A79137CD08F /* Pods-VanfiiderTests.release.xcconfig */,
+				8CB9F265EED1573A796DE068 /* Pods-VanfiiderUITests.debug.xcconfig */,
+				EF33ABE4B5784547D9678A16 /* Pods-VanfiiderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD6DD0B71C71B9A500455B9A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +147,8 @@
 				DD6DD0DA1C71B9A500455B9A /* VanfiiderTests */,
 				DD6DD0E51C71B9A500455B9A /* VanfiiderUITests */,
 				DD6DD0C11C71B9A500455B9A /* Products */,
+				CF6FCBAEDB2C7BF39FF19DC2 /* Pods */,
+				C28023B244E084AD18EEB459 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +165,12 @@
 		DD6DD0C21C71B9A500455B9A /* Vanfiider */ = {
 			isa = PBXGroup;
 			children = (
+				DD5F2F301C746E5D006F673D /* Zag Regular.otf */,
+				DD5F2F2F1C746E56006F673D /* Zag Bold.otf */,
+				DD7BB74A1C73E4E2000C61C8 /* Model */,
+				DD7BB7471C72C61E000C61C8 /* ViewController */,
+				DD7BB7441C728664000C61C8 /* FastImageCache */,
+				DD7BB7431C728656000C61C8 /* OAuth */,
 				DD6DD0C31C71B9A500455B9A /* AppDelegate.swift */,
 				DD6DD0C51C71B9A500455B9A /* ViewController.swift */,
 				DD6DD0C71C71B9A500455B9A /* Main.storyboard */,
@@ -106,6 +178,8 @@
 				DD6DD0CF1C71B9A500455B9A /* LaunchScreen.storyboard */,
 				DD6DD0D21C71B9A500455B9A /* Info.plist */,
 				DD6DD0CA1C71B9A500455B9A /* Vanfiider.xcdatamodeld */,
+				DD1E3E911C71CA96008F4794 /* PhotoInfo.swift */,
+				DD1E3E971C71CAF7008F4794 /* CoreDataStack.swift */,
 			);
 			path = Vanfiider;
 			sourceTree = "<group>";
@@ -128,6 +202,43 @@
 			path = VanfiiderUITests;
 			sourceTree = "<group>";
 		};
+		DD7BB7431C728656000C61C8 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				DD1E3E8F1C71CA56008F4794 /* Instagram.swift */,
+				DD7BB7451C72C575000C61C8 /* Facebook.swift */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
+		DD7BB7441C728664000C61C8 /* FastImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				DD1E3E931C71CABF008F4794 /* FastImageCacheHelper.swift */,
+			);
+			name = FastImageCache;
+			sourceTree = "<group>";
+		};
+		DD7BB7471C72C61E000C61C8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD1E3E9B1C71CC78008F4794 /* InstagramLoginViewController.swift */,
+				DD1E3E9D1C71CFF1008F4794 /* NewFiidsViewController.swift */,
+				DD7BB7481C72C66E000C61C8 /* FacebookLoginViewController.swift */,
+				DD94C3FF1C73FC23005D4AB9 /* TabBarViewController.swift */,
+				DD94C4011C73FDA9005D4AB9 /* LoginViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		DD7BB74A1C73E4E2000C61C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD7BB74D1C73E57C000C61C8 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD6DD0EB1C71B9A500455B9A /* Build configuration list for PBXNativeTarget "Vanfiider" */;
 			buildPhases = (
+				EEAC5CA811214FE9862B45DE /* Check Pods Manifest.lock */,
 				DD6DD0BC1C71B9A500455B9A /* Sources */,
 				DD6DD0BD1C71B9A500455B9A /* Frameworks */,
 				DD6DD0BE1C71B9A500455B9A /* Resources */,
+				755F97B2391FD726209C58E2 /* Embed Pods Frameworks */,
+				6761237D9D2C9D6076521A51 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD6DD0EE1C71B9A500455B9A /* Build configuration list for PBXNativeTarget "VanfiiderTests" */;
 			buildPhases = (
+				7FD74D4B104148EE405243FA /* Check Pods Manifest.lock */,
 				DD6DD0D31C71B9A500455B9A /* Sources */,
 				DD6DD0D41C71B9A500455B9A /* Frameworks */,
 				DD6DD0D51C71B9A500455B9A /* Resources */,
+				048AD3AD90B07EFD3B5A14CA /* Embed Pods Frameworks */,
+				59B656E126EF7E8788B6AD16 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD6DD0F11C71B9A500455B9A /* Build configuration list for PBXNativeTarget "VanfiiderUITests" */;
 			buildPhases = (
+				07770881D88E7306E8BD00FD /* Check Pods Manifest.lock */,
 				DD6DD0DE1C71B9A500455B9A /* Sources */,
 				DD6DD0DF1C71B9A500455B9A /* Frameworks */,
 				DD6DD0E01C71B9A500455B9A /* Resources */,
+				7EE0E7459E0AC80CFF14D424 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +351,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5F2F321C746F53006F673D /* Zag Bold.otf in Resources */,
+				DD5F2F311C746F4F006F673D /* Zag Regular.otf in Resources */,
 				DD6DD0D11C71B9A500455B9A /* LaunchScreen.storyboard in Resources */,
 				DD6DD0CE1C71B9A500455B9A /* Assets.xcassets in Resources */,
 				DD6DD0C91C71B9A500455B9A /* Main.storyboard in Resources */,
@@ -254,14 +375,148 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		048AD3AD90B07EFD3B5A14CA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VanfiiderTests/Pods-VanfiiderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		07770881D88E7306E8BD00FD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59B656E126EF7E8788B6AD16 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VanfiiderTests/Pods-VanfiiderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6761237D9D2C9D6076521A51 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vanfiider/Pods-Vanfiider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755F97B2391FD726209C58E2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vanfiider/Pods-Vanfiider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EE0E7459E0AC80CFF14D424 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VanfiiderUITests/Pods-VanfiiderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FD74D4B104148EE405243FA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAC5CA811214FE9862B45DE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD6DD0BC1C71B9A500455B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD94C4021C73FDA9005D4AB9 /* LoginViewController.swift in Sources */,
+				DD1E3E901C71CA56008F4794 /* Instagram.swift in Sources */,
 				DD6DD0C61C71B9A500455B9A /* ViewController.swift in Sources */,
+				DD7BB7491C72C66E000C61C8 /* FacebookLoginViewController.swift in Sources */,
 				DD6DD0CC1C71B9A500455B9A /* Vanfiider.xcdatamodeld in Sources */,
+				DD1E3E9C1C71CC78008F4794 /* InstagramLoginViewController.swift in Sources */,
 				DD6DD0C41C71B9A500455B9A /* AppDelegate.swift in Sources */,
+				DD1E3E941C71CABF008F4794 /* FastImageCacheHelper.swift in Sources */,
+				DD1E3E921C71CA96008F4794 /* PhotoInfo.swift in Sources */,
+				DD7BB74E1C73E57C000C61C8 /* User.swift in Sources */,
+				DD1E3E9E1C71CFF1008F4794 /* NewFiidsViewController.swift in Sources */,
+				DD94C4001C73FC23005D4AB9 /* TabBarViewController.swift in Sources */,
+				DD7BB7461C72C575000C61C8 /* Facebook.swift in Sources */,
+				DD1E3E981C71CAF7008F4794 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +654,11 @@
 		};
 		DD6DD0EC1C71B9A500455B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E320866ADB77F9510CC405 /* Pods-Vanfiider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Vanfiider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fiidup.Vanfiider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,9 +667,11 @@
 		};
 		DD6DD0ED1C71B9A500455B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229EF4FA62F2B443FED6B2AB /* Pods-Vanfiider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Vanfiider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fiidup.Vanfiider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,6 +680,7 @@
 		};
 		DD6DD0EF1C71B9A500455B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DB87D868EDB2C1699036CF /* Pods-VanfiiderTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VanfiiderTests/Info.plist;
@@ -433,6 +693,7 @@
 		};
 		DD6DD0F01C71B9A500455B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F0B74C4A4C58A79137CD08F /* Pods-VanfiiderTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VanfiiderTests/Info.plist;
@@ -445,6 +706,7 @@
 		};
 		DD6DD0F21C71B9A500455B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB9F265EED1573A796DE068 /* Pods-VanfiiderUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = VanfiiderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -457,6 +719,7 @@
 		};
 		DD6DD0F31C71B9A500455B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF33ABE4B5784547D9678A16 /* Pods-VanfiiderUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = VanfiiderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +749,7 @@
 				DD6DD0ED1C71B9A500455B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD6DD0EE1C71B9A500455B9A /* Build configuration list for PBXNativeTarget "VanfiiderTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +758,7 @@
 				DD6DD0F01C71B9A500455B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD6DD0F11C71B9A500455B9A /* Build configuration list for PBXNativeTarget "VanfiiderUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +767,7 @@
 				DD6DD0F31C71B9A500455B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

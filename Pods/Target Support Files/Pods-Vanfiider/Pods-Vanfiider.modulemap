@@ -1,0 +1,6 @@
+framework module Pods_Vanfiider {
+  umbrella header "Pods-Vanfiider-umbrella.h"
+
+  export *
+  module * { export * }
+}
