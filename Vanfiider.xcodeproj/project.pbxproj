@@ -31,6 +31,8 @@
 		DD7BB74E1C73E57C000C61C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BB74D1C73E57C000C61C8 /* User.swift */; };
 		DD94C4001C73FC23005D4AB9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94C3FF1C73FC23005D4AB9 /* TabBarViewController.swift */; };
 		DD94C4021C73FDA9005D4AB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94C4011C73FDA9005D4AB9 /* LoginViewController.swift */; };
+		DDF16A301C89830E009A6359 /* PantryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF16A2F1C89830E009A6359 /* PantryViewController.swift */; };
+		DDF16A321C89852C009A6359 /* PantryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF16A311C89852C009A6359 /* PantryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		DD7BB74D1C73E57C000C61C8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DD94C3FF1C73FC23005D4AB9 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		DD94C4011C73FDA9005D4AB9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DDF16A2F1C89830E009A6359 /* PantryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryViewController.swift; sourceTree = "<group>"; };
+		DDF16A311C89852C009A6359 /* PantryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF33ABE4B5784547D9678A16 /* Pods-VanfiiderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VanfiiderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VanfiiderUITests/Pods-VanfiiderUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,11 +226,11 @@
 		DD7BB7471C72C61E000C61C8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DD1E3E9B1C71CC78008F4794 /* InstagramLoginViewController.swift */,
-				DD1E3E9D1C71CFF1008F4794 /* NewFiidsViewController.swift */,
-				DD7BB7481C72C66E000C61C8 /* FacebookLoginViewController.swift */,
-				DD94C3FF1C73FC23005D4AB9 /* TabBarViewController.swift */,
-				DD94C4011C73FDA9005D4AB9 /* LoginViewController.swift */,
+				DDF16A2E1C8982FB009A6359 /* Journal */,
+				DDF16A2D1C8982F4009A6359 /* Pantry */,
+				DDF16A2C1C8982E7009A6359 /* Tab Bar */,
+				DDF16A2B1C8982D6009A6359 /* Login */,
+				DDF16A2A1C8982CC009A6359 /* New Fiids */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -237,6 +241,48 @@
 				DD7BB74D1C73E57C000C61C8 /* User.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		DDF16A2A1C8982CC009A6359 /* New Fiids */ = {
+			isa = PBXGroup;
+			children = (
+				DD1E3E9D1C71CFF1008F4794 /* NewFiidsViewController.swift */,
+			);
+			name = "New Fiids";
+			sourceTree = "<group>";
+		};
+		DDF16A2B1C8982D6009A6359 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DD94C4011C73FDA9005D4AB9 /* LoginViewController.swift */,
+				DD7BB7481C72C66E000C61C8 /* FacebookLoginViewController.swift */,
+				DD1E3E9B1C71CC78008F4794 /* InstagramLoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		DDF16A2C1C8982E7009A6359 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				DD94C3FF1C73FC23005D4AB9 /* TabBarViewController.swift */,
+			);
+			name = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		DDF16A2D1C8982F4009A6359 /* Pantry */ = {
+			isa = PBXGroup;
+			children = (
+				DDF16A2F1C89830E009A6359 /* PantryViewController.swift */,
+				DDF16A311C89852C009A6359 /* PantryCollectionViewCell.swift */,
+			);
+			name = Pantry;
+			sourceTree = "<group>";
+		};
+		DDF16A2E1C8982FB009A6359 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Journal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,10 +558,12 @@
 				DD6DD0C41C71B9A500455B9A /* AppDelegate.swift in Sources */,
 				DD1E3E941C71CABF008F4794 /* FastImageCacheHelper.swift in Sources */,
 				DD1E3E921C71CA96008F4794 /* PhotoInfo.swift in Sources */,
+				DDF16A301C89830E009A6359 /* PantryViewController.swift in Sources */,
 				DD7BB74E1C73E57C000C61C8 /* User.swift in Sources */,
 				DD1E3E9E1C71CFF1008F4794 /* NewFiidsViewController.swift in Sources */,
 				DD94C4001C73FC23005D4AB9 /* TabBarViewController.swift in Sources */,
 				DD7BB7461C72C575000C61C8 /* Facebook.swift in Sources */,
+				DDF16A321C89852C009A6359 /* PantryCollectionViewCell.swift in Sources */,
 				DD1E3E981C71CAF7008F4794 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

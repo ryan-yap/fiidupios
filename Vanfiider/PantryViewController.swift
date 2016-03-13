@@ -1,8 +1,8 @@
 //
-//  LoginViewController.swift
+//  PantryViewController.swift
 //  Vanfiider
 //
-//  Created by Kang Shiang Yap on 2016-02-15.
+//  Created by Kang Shiang Yap on 2016-03-04.
 //  Copyright © 2016 Fiidup. All rights reserved.
 //
 
@@ -13,34 +13,9 @@ import Alamofire
 import FastImageCache
 import SwiftyJSON
 
-class NewFiidsTableViewCell : UITableViewCell {
-    // MARK: - IBOutlets
-    var photoInfo: PhotoInfo?
-    var profilePictureInfo: PhotoInfo?
-    
-    @IBOutlet var captions: UITextView!
-    @IBOutlet var full_name: UILabel!
-    @IBOutlet var photo: UIImageView!
-    @IBOutlet var profile_picture: UIImageView!
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        backgroundColor = UIColor(white: 0.1, alpha: 1.0)
-        photo.frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: UIScreen.mainScreen().bounds.size.width)
-        addSubview(photo)
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-}
+class PantryViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UIGestureRecognizerDelegate, UICollectionViewDelegateFlowLayout {
 
-class NewFiidsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UIGestureRecognizerDelegate {
-
-    // MARK: - Global Array
+    
     var nextURLRequest: NSURLRequest?
     var populatingPhotos = false
     var photos = [PhotoInfo]()
@@ -48,22 +23,16 @@ class NewFiidsViewController: UIViewController, UITableViewDelegate, UITableView
     var captions = [String]()
     var full_names = [String]()
     var locations = [String]()
+    let formatName = KMScreenOneThirdSquareFormatName
+    
+    @IBOutlet var pantryCollectionView: UICollectionView!
     
     
-    let formatName = KMScreenWideSquareFormatName
-    let newfiidsCellIdentifier = "NewFiidsTableViewCell"
-    
-    @IBOutlet var newFiidsTable: UITableView!
-    
-    // Setting the row Height
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.newFiidsTable.rowHeight = UIScreen.mainScreen().bounds.size.width + 150
+        // Do any additional setup after loading the view.
     }
-    
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
-    }
+
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -72,7 +41,7 @@ class NewFiidsViewController: UIViewController, UITableViewDelegate, UITableView
             let request = Instagram.Router.PopularPhotos(user.insta_id, user.access_token)
             let nav = self.navigationController?.navigationBar
             nav?.barStyle = UIBarStyle.BlackOpaque
-
+            
             self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(),
                 NSFontAttributeName: UIFont(name: "Zag Bold", size: 21)!]
             populatePhotos(request)
@@ -80,10 +49,39 @@ class NewFiidsViewController: UIViewController, UITableViewDelegate, UITableView
             performSegueWithIdentifier("loginwithinstagramsegue", sender: self)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PantryCollectionViewCell",forIndexPath: indexPath) as! PantryCollectionViewCell
+        
+        let sharedImageCache = FICImageCache.sharedImageCache()
+        
+        cell.image!.image = nil
+        let photo = photos[indexPath.row] as PhotoInfo
+        if (cell.photoInfo != photo) {
+            
+            sharedImageCache.cancelImageRetrievalForEntity(cell.photoInfo, withFormatName: formatName)
+            
+            cell.photoInfo = photo
+        }
+        
+        sharedImageCache.retrieveImageForEntity(photo, withFormatName: formatName, completionBlock: {
+            (photoInfo, _, image) -> Void in
+            if (photoInfo as! PhotoInfo) == cell.photoInfo {
+                cell.image.image = image
+            }
+        })
+        return cell
+
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photos.count
     }
     
     func populatePhotos(request: URLRequestConvertible) {
@@ -136,8 +134,8 @@ class NewFiidsViewController: UIViewController, UITableViewDelegate, UITableView
                         
                         //Extracting captions
                         let captionsInfos = json["data"].arrayValue.map({
-                                String(stringLiteral: $0["caption"]["text"].stringValue)
-                            })
+                            String(stringLiteral: $0["caption"]["text"].stringValue)
+                        })
                         self.captions.appendContentsOf(captionsInfos)
                         
                         //Extracting Full Name
@@ -155,7 +153,7 @@ class NewFiidsViewController: UIViewController, UITableViewDelegate, UITableView
                         let indexPaths = (lastItem..<self.photos.count).map { NSIndexPath(forItem: $0, inSection: 0) }
                         
                         dispatch_async(dispatch_get_main_queue()) {
-                            self.newFiidsTable.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Fade)
+                            self.pantryCollectionView.insertItemsAtIndexPaths(indexPaths)
                         }
                     }
                 }
@@ -166,72 +164,9 @@ class NewFiidsViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return photos.count
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(self.newfiidsCellIdentifier, forIndexPath: indexPath) as! NewFiidsTableViewCell
-        
-        let sharedImageCache = FICImageCache.sharedImageCache()
-        
-        cell.imageView!.image = nil
-        cell.profile_picture.image = nil
-        
-        let layer = cell.profile_picture.layer
-        layer.cornerRadius = cell.profile_picture.frame.size.width/2;
-        layer.masksToBounds = true
-        
-        let photo = photos[indexPath.row] as PhotoInfo
-        if (cell.photoInfo != photo) {
-            
-            sharedImageCache.cancelImageRetrievalForEntity(cell.photoInfo, withFormatName: formatName)
-            
-            cell.photoInfo = photo
-        }
-        
-        sharedImageCache.retrieveImageForEntity(photo, withFormatName: formatName, completionBlock: {
-            (photoInfo, _, image) -> Void in
-            if (photoInfo as! PhotoInfo) == cell.photoInfo {
-                cell.photo.image = image
-            }
-        })
-        
-        let profile_picture = self.profile_pictures[indexPath.row] as PhotoInfo
-        if (cell.profilePictureInfo != profile_picture) {
-            sharedImageCache.cancelImageRetrievalForEntity(cell.profilePictureInfo, withFormatName: formatName)
-            cell.profilePictureInfo = profile_picture
-        }
-        
-        sharedImageCache.retrieveImageForEntity(profile_picture, withFormatName: formatName, completionBlock: {
-            (photoInfo, _, image) -> Void in
-            if (photoInfo as! PhotoInfo) == cell.profilePictureInfo {
-                cell.profile_picture.image = image
-            }
-        })
-        
-        if(self.locations[indexPath.row] != ""){
-            cell.full_name.text = self.full_names[indexPath.row] + " @ " + self.locations[indexPath.row]
-        }else{
-            cell.full_name.text = self.full_names[indexPath.row]
-        }
-        cell.captions.text = self.captions[indexPath.row]
-        let fixedWidth = cell.captions.frame.size.width
-        cell.captions.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
-        let newSize = cell.captions.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
-        var newFrame = cell.captions.frame
-        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
-        cell.captions.frame = newFrame;
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let textView = UITextView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width - 16, height: 10))
-        textView.text = self.captions[indexPath.row]
-        let fixedWidth = textView.frame.size.width
-        textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
-        let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
-        return UIScreen.mainScreen().bounds.size.width + 59 + newSize.height*1.3 + 25
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let size : CGFloat = (self.pantryCollectionView.frame.width - 2)/3
+        return CGSize(width: size, height: size)
     }
     
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -241,6 +176,8 @@ class NewFiidsViewController: UIViewController, UITableViewDelegate, UITableView
             self.navigationController?.setNavigationBarHidden(false, animated: true)
         }
     }
+    
+    
     /*
     // MARK: - Navigation
 

@@ -14,6 +14,7 @@ let KMPhotoImageFormatFamily = "KMPhotoImageFormatFamily"
 let KMSmallImageFormatName = "KMSmallImageFormatName"
 let KMBigImageFormatName = "KMBigImageFormatName"
 let KMScreenWideSquareFormatName = "KMScreenWideSquareFormatName"
+let KMScreenOneThirdSquareFormatName = "KMScreenOneThirdSquareFormatName"
 
 var KMSmallImageSize: CGSize {
     let column = UI_USER_INTERFACE_IDIOM() == .Pad ? 4 : 3
@@ -31,6 +32,11 @@ var KMScreenWideSquare: CGSize{
     return CGSize(width: width, height: width)
 }
 
+var KMScreenOneThirdSquare: CGSize{
+    let width = (UIScreen.mainScreen().bounds.size.width - 2)/3
+    return CGSize(width: width, height: width)
+}
+
 class FastImageCacheHelper {
     
     class func setUp(delegate: FICImageCacheDelegate) {
@@ -44,6 +50,9 @@ class FastImageCacheHelper {
         
         let ScreenWideSquare = FICImageFormat(name: KMScreenWideSquareFormatName, family: KMPhotoImageFormatFamily, imageSize: KMScreenWideSquare, style: .Style32BitBGRA, maximumCount: squareImageFormatMaximumCount, devices: [.Phone, .Pad], protectionMode: .None)
         imageFormats.append(ScreenWideSquare)
+        
+        let ScreenOneThirdSquare = FICImageFormat(name: KMScreenOneThirdSquareFormatName, family: KMPhotoImageFormatFamily, imageSize: KMScreenOneThirdSquare, style: .Style32BitBGRA, maximumCount: squareImageFormatMaximumCount, devices: [.Phone, .Pad], protectionMode: .None)
+        imageFormats.append(ScreenOneThirdSquare)
         
         let sharedImageCache = FICImageCache.sharedImageCache()
         sharedImageCache.delegate = delegate
