@@ -114,6 +114,29 @@
                                                     <segue destination="riv-d2-F35" kind="presentation" id="Isk-bu-rBg"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore with us:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HF5-k6-5Oe">
+                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Ian-66-R0R"/>
+                                                    <constraint firstAttribute="width" constant="121" id="Sg3-9V-3Qc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZagBold" family="Zag Bold" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Ian-66-R0R"/>
+                                                        <exclude reference="Sg3-9V-3Qc"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="67" y="11" width="121" height="21"/>
+                                                    <mask key="constraints">
+                                                        <include reference="Ian-66-R0R"/>
+                                                        <include reference="Sg3-9V-3Qc"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ox-gx-lfX">
                                                 <rect key="frame" x="20" y="66" width="239" height="38"/>
                                                 <constraints>
@@ -134,28 +157,6 @@
                                                     </mask>
                                                 </variation>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore with us:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HF5-k6-5Oe">
-                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="Ian-66-R0R"/>
-                                                    <constraint firstAttribute="width" constant="121" id="Sg3-9V-3Qc"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="ZagBold" family="Zag Bold" pointSize="20"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="Ian-66-R0R"/>
-                                                        <exclude reference="Sg3-9V-3Qc"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="Ian-66-R0R"/>
-                                                        <include reference="Sg3-9V-3Qc"/>
-                                                    </mask>
-                                                </variation>
-                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="r1s-31-Gdu" firstAttribute="centerX" secondItem="y05-TI-f00" secondAttribute="centerX" id="7gX-Lk-UcR"/>
@@ -172,8 +173,8 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
-                                                <exclude reference="6Ox-gx-lfX"/>
                                                 <exclude reference="HF5-k6-5Oe"/>
+                                                <exclude reference="6Ox-gx-lfX"/>
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="DwM-M9-PHG"/>
@@ -189,8 +190,8 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="subviews">
-                                                <include reference="6Ox-gx-lfX"/>
                                                 <include reference="HF5-k6-5Oe"/>
+                                                <include reference="6Ox-gx-lfX"/>
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="DwM-M9-PHG"/>
@@ -387,7 +388,7 @@
                                 </variation>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.047058823529411764" green="0.047058823529411764" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99293718434343436" green="0.99293718434343436" blue="0.99293718434343436" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Cpy-5u-Ndd" firstAttribute="top" secondItem="wxF-GH-WWv" secondAttribute="topMargin" id="K6w-Ee-F32"/>
                             <constraint firstItem="g9k-8z-Bbu" firstAttribute="top" secondItem="Cpy-5u-Ndd" secondAttribute="bottom" id="UbC-2S-N3k"/>
@@ -426,7 +427,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hi3-5a-Uhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295.5" y="-378.75"/>
+            <point key="canvasLocation" x="289" y="-379"/>
         </scene>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
@@ -519,7 +520,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="805-rh-Bmb" id="EBY-V4-DZU">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="587.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="587"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-dc-KNC">
@@ -994,14 +995,14 @@
                                 <exclude reference="39v-Uz-yK4"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Hwi-3v-O6x"/>
+                                <exclude reference="Mgy-li-LiF"/>
                                 <exclude reference="BkM-Vw-aUz"/>
                                 <exclude reference="QW9-uf-Mf8"/>
                                 <exclude reference="bxc-v3-2Jz"/>
                                 <exclude reference="bFQ-Hb-Myg"/>
                                 <exclude reference="gd9-8I-6H8"/>
                                 <exclude reference="tnL-iP-fYA"/>
-                                <exclude reference="Hwi-3v-O6x"/>
-                                <exclude reference="Mgy-li-LiF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1010,28 +1011,28 @@
                                 <include reference="39v-Uz-yK4"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Hwi-3v-O6x"/>
+                                <include reference="Mgy-li-LiF"/>
                                 <include reference="BkM-Vw-aUz"/>
                                 <include reference="QW9-uf-Mf8"/>
                                 <include reference="bxc-v3-2Jz"/>
                                 <include reference="bFQ-Hb-Myg"/>
                                 <include reference="gd9-8I-6H8"/>
                                 <include reference="tnL-iP-fYA"/>
-                                <include reference="Hwi-3v-O6x"/>
-                                <include reference="Mgy-li-LiF"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Vanfiider" id="qtt-9B-aL3">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="YNh-Dl-W0w">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Qg-L2-XC2">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="20" y="7" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="setting_bars"/>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="byh-Jz-k1i">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="02J-Jg-hvr">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="534" y="7" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="search"/>
                             </button>
@@ -1062,7 +1063,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDP-5t-TPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3502.5" y="-363"/>
+            <point key="canvasLocation" x="3638" y="-433"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rcQ-ng-8Oi">
@@ -1245,10 +1246,10 @@
                                 <exclude reference="gJh-nV-ETK"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="hWQ-k3-G2e"/>
                                 <exclude reference="Mmi-rM-v51"/>
                                 <exclude reference="qDH-UW-tk0"/>
                                 <exclude reference="t4r-pI-y5v"/>
-                                <exclude reference="hWQ-k3-G2e"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1256,24 +1257,24 @@
                                 <include reference="gJh-nV-ETK"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="hWQ-k3-G2e"/>
                                 <include reference="Mmi-rM-v51"/>
                                 <include reference="qDH-UW-tk0"/>
                                 <include reference="t4r-pI-y5v"/>
-                                <include reference="hWQ-k3-G2e"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Pantry" id="ZcR-41-1Ua">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="Hlf-87-tQp">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kuM-eI-VgL">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="20" y="7" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="setting_bars"/>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="fAD-Tl-eA8">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C4c-pu-Ada">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="534" y="7" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="search"/>
                             </button>
